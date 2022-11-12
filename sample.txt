@@ -1,0 +1,43 @@
+// const names=["sara","sima","poul"];
+  
+  const users=[
+    {name:"sara" ,age: 10},
+    {name:"bita" ,age: 22},
+    {name:"sara" ,age: 33},  
+  ];
+  //let num=0;
+  
+  const [num,setNum]=useState(0);
+  const increaseNum=()=>{
+    console.log(num);
+    return setNum(num+1);
+  };
+  const decreaseNum=()=>{
+    console.log(num);
+    return setNum(num-1);
+  };
+
+  const [myText,setMyText]=useState("");
+  const handleInputChange=(event)=>{
+  setMyText(event.target.value);
+  };
+
+  const [showText,setShowText]=useState(true);
+  const [textColor,settextColor]=useState("red");
+  const showhide=()=>{
+    setShowText(!showText);
+    //console.log(textColor);
+    settextColor("blue");
+  };
+
+
+  
+ const Job=(props)=>{  
+    return(
+      <div className='job' style={{background:parseInt(props.salary)>1000?"blue":"green"}}>
+        <h1>salary: {props.salary}</h1>
+        <h3>position: {props.position}</h3>
+        <h3>company: {props.company}</h3>
+      </div>
+    )
+  }

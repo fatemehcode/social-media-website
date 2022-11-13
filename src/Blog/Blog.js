@@ -11,6 +11,8 @@ export const Blog=()=>{
         const i={
                 id:List.length===0?1:List[List.length-1].id+1,
                 title:newItem,
+                body:'',
+                AuthorId:1,
                 
             };
         setList([...List,i]);

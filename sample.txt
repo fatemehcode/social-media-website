@@ -40,4 +40,14 @@
         <h3>company: {props.company}</h3>
       </div>
     )
-  }
+  }/*fetch(apiUrl)
+            .then((res)=>res.json())
+            .then((data)=>{
+                console.log(data); 
+                setItem(data.fact);            
+            }) */
+
+
+            
+
+            

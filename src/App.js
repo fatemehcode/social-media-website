@@ -11,7 +11,10 @@ import {UsingAPIs} from "./Pages/UsingAPIs";
 import {Home} from './Pages/Home';
 import { TopComponent } from "./Pages/useContextSample/TopComponent";
 import{QueryClient,QueryClientProvider}from '@tanstack/react-query';
+import {RegisterForm} from './Pages/Forms/Form';
+
 export const AppContext=createContext();
+
 function App() {
   const [username,setUsername]=useState('Fahimeh');
   const client=new QueryClient({defaultOptions:{
@@ -33,6 +36,8 @@ function App() {
               <Route path="/Blog" element={<Blog/>} />          
               <Route path="/UsingAPIs" element={<UsingAPIs/>}/>
               <Route path="/TopComponent" element={<TopComponent/>}/>
+              <Route path="/RegisterForm" element={<RegisterForm/>}/>
+
               <Route path="*" element={<h1>Page not Found</h1>}/>
 
             </Routes>          

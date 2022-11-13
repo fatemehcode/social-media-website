@@ -9,7 +9,7 @@ export const Navbar=()=>{
                 <li><Link to="/Blog">Blog</Link></li>
                 <li><Link to="/UsingAPIs">UsingAPIs</Link></li>       
                 <li><Link to="/TopComponent">Using Context</Link></li>       
-                
+                <li><Link to="/RegisterForm">RegisterForm</Link></li>
             </ul>
             <hr/>
            

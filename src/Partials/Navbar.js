@@ -13,6 +13,7 @@ export const Navbar=()=>{
                 <li><Link to="/CatPage">Cat</Link></li>
                 <li><Link to="/LandingPage">LandingPage</Link></li>
                 <li><Link to="/Login">Login</Link></li>
+                <li><Link to="/Calculator">Caclulator</Link></li>
 
             </ul>
             <hr/>

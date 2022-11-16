@@ -14,6 +14,7 @@ export const Navbar=()=>{
                 <li><Link to="/LandingPage">LandingPage</Link></li>
                 <li><Link to="/Login">Login</Link></li>
                 <li><Link to="/Calculator">Caclulator</Link></li>
+                <li><Link to="/Users">Users</Link></li>
 
             </ul>
             <hr/>

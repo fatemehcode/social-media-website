@@ -47,7 +47,22 @@
                 setItem(data.fact);            
             }) */
 
-
+import { Cat } from "./Cat";
+import { QueryClient,QueryClientProvider } from "@tanstack/react-query";
+export const CatPage=()=>{
+    const client=new QueryClient({
+        defaultOptions:{
+            queries:{ refetchOnWindowFocus:true,},
+        },
+    });
+    return(
+        <div>
+            <QueryClientProvider>
+               <Cat/>
+            </QueryClientProvider>
+        </div>
+    );
+}
             
 
             

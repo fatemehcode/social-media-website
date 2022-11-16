@@ -12,6 +12,9 @@ import {Home} from './Pages/Home';
 import { TopComponent } from "./Pages/useContextSample/TopComponent";
 import{QueryClient,QueryClientProvider}from '@tanstack/react-query';
 import {RegisterForm} from './Pages/Forms/Form';
+import { CatPage } from "./Pages/Cat/CatPage";
+import { LandingPage } from "./Pages/LandingPage";
+import {Login} from "./Pages/Login";
 
 export const AppContext=createContext();
 
@@ -37,6 +40,9 @@ function App() {
               <Route path="/UsingAPIs" element={<UsingAPIs/>}/>
               <Route path="/TopComponent" element={<TopComponent/>}/>
               <Route path="/RegisterForm" element={<RegisterForm/>}/>
+              <Route path="/CatPage" element={<CatPage/>}/>
+              <Route path="/LandingPage" element={<LandingPage/>}/>
+              <Route path="/Login" element={<Login/>}/>
 
               <Route path="*" element={<h1>Page not Found</h1>}/>
 

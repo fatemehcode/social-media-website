@@ -10,6 +10,10 @@ export const Navbar=()=>{
                 <li><Link to="/UsingAPIs">UsingAPIs</Link></li>       
                 <li><Link to="/TopComponent">Using Context</Link></li>       
                 <li><Link to="/RegisterForm">RegisterForm</Link></li>
+                <li><Link to="/CatPage">Cat</Link></li>
+                <li><Link to="/LandingPage">LandingPage</Link></li>
+                <li><Link to="/Login">Login</Link></li>
+
             </ul>
             <hr/>
            
